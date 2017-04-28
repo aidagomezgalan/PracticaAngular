@@ -1,0 +1,72 @@
+<article>
+    <div class="msg-error" 
+    ng-show="viewCreate.showMsg">PERSONALIZA TU PERSONAJE!!!!</div>
+    <p>
+         <label for="playerName">
+            Nombre
+        </label>
+
+        <input 
+        type="text" 
+        id="playerName" 
+        ng-model="viewCreate.playerName"
+        ng-class="{ 'has-error': !viewCreate.playerName && viewCreate.formIsSend }"
+        >
+       
+    </p>
+    <p>
+        <label for="playerEmail">
+            Email
+        </label>
+
+        <input 
+        type="text" 
+        id="playerEmail" 
+        ng-model="viewCreate.playerEmail"
+        ng-class="{ 'has-error': !viewCreate.playerEmail && viewCreate.formIsSend }"
+        >
+        
+    </p>
+    <p>
+        <input 
+        type="radio"
+        id="avatar" 
+        value="avatar1"
+        ng-model="viewCreate.playerAvatar"
+        ng-class="{ 'has-error': !viewCreate.playerAvatar && viewAdd.formIsSend }"
+        >
+       
+        <label for="playerAvatar">
+            Avatar1
+        </label>
+     
+     <input 
+        type="radio"
+        id="avatar" 
+        value="avatar2"
+        ng-model="viewCreate.playerAvatar"
+        ng-class="{ 'has-error': !viewCreate.playerAvatar && viewAdd.formIsSend }"
+        >
+       
+        <label for="playerAvatar">
+            Avatar2
+        </label>
+   
+     <input 
+        type="radio"
+        id="avatar" 
+        value="avatar3"
+        ng-model="viewCreate.playerAvatar"
+        ng-class="{ 'has-error': !viewCreate.playerAvatar && viewAdd.formIsSend }"
+        >
+       
+        <label for="playerAvatar">
+            Avatar3
+        </label>
+    </p> 
+    <p>
+        <button ng-click="viewCreate.addPlayer()">
+            Empezar a jugar
+        </button>
+    </p>
+</article>
