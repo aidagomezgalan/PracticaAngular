@@ -13,9 +13,9 @@
   "author": "Aida Gómez Galán",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mmfilesi/taller-angular/issues"
+    "url": "https://github.com/aidagomezgalan/PracticaAngular/issues"
   },
-  "homepage": "https://github.com/mmfilesi/taller-angular#readme",
+  "homepage": "https://github.com/aidagomezgalan/PracticaAngular#readme",
   "dependencies": {
     "angular-ui-router": "^0.4.2"
   },
