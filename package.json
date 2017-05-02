@@ -1,16 +1,16 @@
 {
-  "name": "taller-angular",
+  "name": " Práctica Angular JS",
   "version": "1.0.0",
-  "description": "taller de Angular para Vector Academy",
+  "description": "Práctica final para Vector Academy",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mmfilesi/taller-angular.git"
+    "url": "git+https://github.com/aidagomezgalan/PracticaAngular.git"
   },
-  "author": "mmfilesi",
+  "author": "Aida Gómez Galán",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mmfilesi/taller-angular/issues"
