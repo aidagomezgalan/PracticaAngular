@@ -1,4 +1,13 @@
 <section>
-   SOY VIEW GAME 
-   <!--{{viewGame.animalDetail}}-->
+   <p>
+	   {{viewGame.player.name}}
+	   {{viewGame.player.surname}}
+	   {{viewGame.player.avatar}}
+   </p>
+</section>
+
+<section class= "cards-container">
+   <div ng-repeat= "item in viewGame.cardsBack">
+	  <img src= "app/styles/imgs/logo.png" class= "cards-back"/>
+   </div>
 </section>

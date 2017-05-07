@@ -17,9 +17,8 @@
 <body ng-app="app" ng-strict-di>
     <section class="main-container">
         <header-animals></header-animals>   
-        <!-- aquí se irán renderizando los componentes indicados en el router -->
         <ui-view></ui-view>  
-         <footer-animals></footer-animals>      
+        <footer-animals></footer-animals>      
     </section>
     
     <!-- angular -->
@@ -32,28 +31,22 @@
 
     <!-- servicios / factorías -->
     <script src="app/services/player-factory.js"></script>
+    <script src="app/services/cards-factory.js"></script>
 
     <!-- componentes -->
         <!-- pantalla main -->
         <script src="app/components/main/view-main.js"></script>
-        <script src="app/components/main/animalsList/animals-list.js"></script>
-        <script src="app/components/main/animalsCard/animals-card.js"></script> 
         
-        <!-- pantalla detail -->
+        <!-- pantalla game -->
         <script src="app/components/game/view-game.js"></script>
 
           <!-- pantalla create -->
         <script src="app/components/create/view-create.js"></script>
 
-          <!-- pantalla edit 
-        <script src="app/components/edit/view-edit.js"></script>-->
-
         <!-- comunes -->
         <script src="app/components/commons/header/header.js"></script>
         <script src="app/components/commons/footer/footer.js"></script>
 
-
 </body>
-
 
 </html>

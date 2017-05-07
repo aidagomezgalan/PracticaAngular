@@ -1,29 +1,25 @@
 <article>
-    <div class="msg-error" 
-    ng-show="viewCreate.showMsg">PERSONALIZA TU PERSONAJE!!!!</div>
     <p>
-         <label for="playerName">
+        <label for="name">
             Nombre
         </label>
 
         <input 
         type="text" 
-        id="playerName" 
-        ng-model="viewCreate.playerName"
-        ng-class="{ 'has-error': !viewCreate.playerName && viewCreate.formIsSend }"
+        id="name" 
+        ng-model="viewCreate.playerInfo.name"
         >
        
     </p>
     <p>
-        <label for="playerEmail">
-            Email
+        <label for="surname">
+            Apellido
         </label>
 
         <input 
         type="text" 
-        id="playerEmail" 
-        ng-model="viewCreate.playerEmail"
-        ng-class="{ 'has-error': !viewCreate.playerEmail && viewCreate.formIsSend }"
+        id="surname" 
+        ng-model="viewCreate.playerInfo.surname"
         >
         
     </p>
@@ -32,11 +28,10 @@
         type="radio"
         id="avatar" 
         value="avatar1"
-        ng-model="viewCreate.playerAvatar"
-        ng-class="{ 'has-error': !viewCreate.playerAvatar && viewAdd.formIsSend }"
+        ng-model="viewCreate.playerInfo.avatar"
         >
        
-        <label for="playerAvatar">
+        <label for="avatar">
             Avatar1
         </label>
      
@@ -44,11 +39,10 @@
         type="radio"
         id="avatar" 
         value="avatar2"
-        ng-model="viewCreate.playerAvatar"
-        ng-class="{ 'has-error': !viewCreate.playerAvatar && viewAdd.formIsSend }"
+        ng-model="viewCreate.playerInfo.avatar"
         >
        
-        <label for="playerAvatar">
+        <label for="avatar">
             Avatar2
         </label>
    
@@ -56,17 +50,17 @@
         type="radio"
         id="avatar" 
         value="avatar3"
-        ng-model="viewCreate.playerAvatar"
-        ng-class="{ 'has-error': !viewCreate.playerAvatar && viewAdd.formIsSend }"
+        ng-model="viewCreate.playerInfo.avatar" 
         >
        
-        <label for="playerAvatar">
+        <label for="avatar">
             Avatar3
         </label>
     </p> 
     <p>
-        <button ng-click="viewCreate.addPlayer()">
+    </p>
+    <p>
+        <button ng-click="viewCreate.setPlayerInfo()">
             Empezar a jugar
         </button>
     </p>
-</article>

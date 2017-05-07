@@ -18,6 +18,9 @@ gulp.task('browserSync', function() {
   });
 
   gulp.watch("src/app/**/*.js").on("change", reload);
+  gulp.watch("src/**/*.html").on("change", reload);
+  gulp.watch("src/app/styles/*.css").on("change", reload);
+  gulp.watch("src/app/styles/**/*.jpg").on("change", reload);
 });
 
 

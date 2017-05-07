@@ -2,44 +2,30 @@
 
   angular.module('app').component('viewCreate', {
     templateUrl:  'app/components/create/view-create-template.html',
-    controller: ['$state', 'playerFactory', viewCreate],
-    controllerAs: 'viewCreate'
+    controller: ['$state','playerFactory', viewCreate],
+    controllerAs: 'viewCreate',
   });
 
   function viewCreate($state, playerFactory) {
     var vm = this;
 
-    vm.$onInit = function() { 
-      vm.showMsg = false;
-      vm.formIsSend = false;     
+    vm.$onInit = function() {
+      vm.playerInfo = {
+        name: '',
+        surname: '',
+        avatar: ''
+      };
     };
-
-    //aqui metemos los datos del formulario
-    vm.addPlayer = function() {
-       var newPlayer = {
-         name: vm.playerName, 
-         email: vm.playerEmail,
-         avatar: vm.playerAvatar
-        };
-
-        vm.formIsSend = true;    
-
-        if ( !newPlayer.name || !newPlayer.email || !newPlayer.avatar ) {
-          vm.showMsg = true;
-        } else {
-           vm.showMsg = false;
-        }
-
-       if ( !vm.showMsg ) {
-        playerFactory.addAPlayer(newPlayer);
-      }
+    //accedo a un método de mi factoría al que le paso el objeto recogido playerInfo
+    vm.setPlayerInfo = function (){
+      playerFactory.setPlayer(vm.playerInfo);
 
       vm.goToGame();
-
     };
 
     vm.goToGame = function() {
-      $state.go('game');
+     $state.go('game');   
     };
-  }
+
+  };
 })(angular);
